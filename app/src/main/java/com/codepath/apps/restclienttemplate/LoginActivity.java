@@ -28,6 +28,7 @@ public class LoginActivity extends OAuthLoginActionBarActivity<TwitterClient> {
 		AsyncTask.execute(new Runnable() {
 			@Override
 			public void run() {
+
 				sampleModelDao.insertModel(sampleModel);
 			}
 		});
@@ -54,6 +55,7 @@ public class LoginActivity extends OAuthLoginActionBarActivity<TwitterClient> {
 	// i.e Display an error dialog or toast
 	@Override
 	public void onLoginFailure(Exception e) {
+
 		e.printStackTrace();
 	}
 
